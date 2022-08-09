@@ -1,0 +1,229 @@
+
+<!DOCTYPE html>
+<html lang="en"> 
+
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=ISO-8859-1" /><!-- /Added by HTTrack -->
+						 <head>
+
+						 	<!-- Basic -->
+						 	<meta charset="utf-8">
+						 	<title>Adhaar Authintication</title>
+
+						 	<!-- Mobile Specific Metas -->
+						 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+						 	<!-- Libs CSS -->
+						 	<link href="css/bootstrap.css" rel="stylesheet">
+						 	<link href="css/font-awesome.min.css" rel="stylesheet">
+						 	<link href="css/prettyPhoto.css" rel="stylesheet">
+						 	<link href="css/flexslider.css" rel="stylesheet">
+						 	<link href="css/owl.carousel.css" rel="stylesheet">
+
+						 	<!-- On Scroll Animations -->
+						 	<link href="css/animate.css" rel="stylesheet">
+
+						 	<!-- Template CSS -->
+						 	<link href="css/style.css" rel="stylesheet">
+
+						 	<!-- Responsive CSS -->
+						 	<link href="css/responsive.css" rel="stylesheet">
+
+						 	<!-- Favicons -->
+						 	<link rel="shortcut icon" href="images/USEINDIA.png">
+
+<script src="js/jquery-3.5.2.min.js" type="text/javascript"></script>
+						 	<style type="text/css">
+							.divider:after,
+.divider:before {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: #eee;
+}
+								  .blink-one {
+								   /*  animation: blinker-two 2s linear infinite;
+						   */
+								   animation: blinker-one .6s linear infinite;
+								   color: yellow;
+								  }
+
+								  @keyframes blinker-one {
+								   50% {
+									   opacity: 0;
+								   }
+						 	</style>
+						 	<script>
+
+								function validateForm()
+								{
+								
+									var inputVal = document.getElementById("userId").value;
+                                    var y = document.getElementById("password").value;
+									if (inputVal == "") {
+										alert("Please Enter userId ");
+										
+									}
+
+									else if (y == "") {
+										alert("Please enter Password");
+									}
+									else if (inputVal == "B2B" && y == "b2b@345")
+									{
+                                       //window.location.href = "useindia.html";
+									window.location.href = "http://www.w3schools.com";
+									 if (y == "b2b@345")
+									 {
+										 window.location.href = "useindia.html";
+									 }
+
+										 else
+										 {
+											 alert("userid and password wrong");
+                                         }
+										
+									}
+                                    
+
+                                    // Displaying the value
+                                    //alert(inputVal);
+                                   
+									   //window.location.href = "Login.aspx";
+								      
+						        }
+
+
+						 	</script>
+	
+						 </head>
+	<body>
+	
+		<!-- HEADER
+		============================================= -->
+		<header id="header">		
+			<div class="navbar navbar-background-color">	
+				<input type="hidden" id= "showFlashMsgModel">
+				<div class="container-fluid logo-header-section">
+					<div class="row">
+						<div class="col-sm-2 pmjay-logo">
+							<img src="images/1200px-Aadhaar_Logo.svg.png" alt="PMJAY Logo">
+						</div>
+						<div class="col-sm-8 project-title">
+							<h2>Welcome to USEINDIA <br /> Update Aadhar Card</h2>
+						</div>
+						<div class="col-sm-2 USEINDIA-logo">
+						<a href="http://www.USEINDIA.com/" target="_new">	<img src="images/1200px-Aadhaar_Logo.svg.png" alt="USEINDIA Logo"></a>
+						</div>
+					</div>
+				</div>
+				
+				<div id="my-fixed-menu" class="container-fluid">
+
+					<!-- Navigation Bar -->
+					<div class="navbar-header">
+					
+						<!-- Responsive Menu -->
+						<button type="button" id="nav-toggle" class="navbar-toggle" data-toggle="collapse" data-target="#navigation-menu">
+							<span class="sr-only">Toggle navigation</span> 
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>						
+					</div>	<!-- End Navigation Bar -->
+					
+					
+					
+					
+					
+				</div>	  <!-- End container -->
+			</div>		<!-- End navbar fixed top  -->		
+		</header>	
+
+ <section class="vh-100" style="margin-top:55px !important;">
+  <div class="container py-5 h-100">
+    <div class="row d-flex align-items-center justify-content-center h-100" style="background-color: #122449fa;border-radius: 54px;">
+    
+      <div class="col-md-5 col-lg-5 col-xl-4">
+        <img src="images/BIOIMAGE.jpg" class="img-fluid" height="300" alt="Phone image">
+      </div>
+      <div class="col-md-7 col-lg-5 col-xl-5 offset-xl-1">
+      
+          
+          <div class="form-outline mb-4">
+		   <label class="form-label"  class="example" style="color:white;"   for="form1Example13">User ID</label>
+            <input type="text" id="userId" placeholder="User ID" class="form-control form-control-lg" />
+           
+          </div>
+
+          
+          <div class="form-outline mb-4">
+		   <label class="form-label" style="color:white;"   for="form1Example23">Password</label>
+            <input type="password" id="password"  placeholder="Password" class="form-control form-control-lg" />
+           
+          </div>
+
+          <div class="d-flex justify-content-around align-items-center mb-4">
+           
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value=""
+                id="form1Example3"
+                checked
+              />
+              <label class="form-check-label" for="form1Example3"> Remember me </label>
+            </div>
+            <a href="#!">Forgot password?</a>
+          </div>
+
+          
+          <button type="submit" id="loginBtnId" onclick="validateForm();" class="btn btn-success btn-lg btn-block">Log in</button>
+
+         
+
+          
+          
+       
+      </div>
+    </div>
+  </div>
+</section> 
+	<br/>	
+		<br/>
+		<br/>
+		<br/>
+		<br/>
+		<br/>
+		
+	<footer id="footer">
+  <div class="container">
+					<div class="row">
+
+						<!-- Footer Copy-->
+						<div id="footer_copy" class="col-md-12 text-center">	
+							<p>
+								
+								© 2022 All Rights Reserved. Design by USEINDIA
+							</p>	
+						</div>	
+
+					</div>   <!-- End row -->				
+				</div>	  <!-- End container -->							
+			</footer>	<!-- END FOOTER -->	<!-- <script src="js/jquery-2.1.1.min.js" type="text/javascript"></script> -->
+		
+		<script src="js/bootstrap-3.min.js" type="text/javascript"></script>	
+		<script src="js/modernizr.custom.js" type="text/javascript"></script>
+		<script src="js/jquery.easing.js" type="text/javascript"></script>
+		<script src="js/retina.js" type="text/javascript"></script>	
+		<script src="js/jquery.parallax-1.1.3.js" type="text/javascript"></script>
+		<script defer src="js/jquery.validate.min.js" type="text/javascript"></script>	
+		<script defer src="js/jquery.flexslider.js" type="text/javascript"></script>	
+		<script src="js/jquery.prettyPhoto.js" type="text/javascript"></script>
+		<script src="js/owl.carousel.js" type="text/javascript"></script>	
+		<script src="js/waypoints.min.js" type="text/javascript"></script>	
+		<script src="js/custom.js" type="text/javascript"></script>
+
+		
+</body>
+
+</html>
